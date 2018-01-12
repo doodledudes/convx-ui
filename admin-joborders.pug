@@ -25,67 +25,87 @@ block content
               .form-group.search
                 input.form-control(placeholder='Search...')
               //- form-group
-              .row
-                .col-xs-4
-                  img.img-responsive(src="//via.placeholder.com/200")
-                //- col
-                .col-xs-8
-                  p.name
-                    a(href="") 47 Ashburnton Avenue South Turramurra, NSW 2074
-                  p 4 Bed / 2 Bath / 2 Car Space / 1366 m
-                    sup 2
-                    | &nbsp;/ HOUSE
-                  //- p
-                  .text-muted Listed on 05/01/2018 by Ray White - Turramurra
-                //- col
-              //- row
-              .row
-                .col-xs-4
-                  img.img-responsive(src="//via.placeholder.com/200")
-                //- col
-                .col-xs-8
-                  p.name
-                    a(href="") 45 Barwon Avenue South Turramurra, NSW 2074
-                  p 5 Bed / 3 Bath / - Car Space / 1156 m
-                    sup 2
-                    | &nbsp;/ HOUSE
-                  //- p
-                  .text-muted Listed on 05/01/2018 by Pearman Media
-                //- col
-              //- row
-              .row
-                .col-xs-4
-                  img.img-responsive(src="//via.placeholder.com/200")
-                //- col
-                .col-xs-8
-                  p.name
-                    a(href="") 47 Ashburnton Avenue South Turramurra, NSW 2074
-                  p 4 Bed / 2 Bath / 2 Car Space / 1366 m
-                    sup 2
-                    | &nbsp;/ HOUSE
-                  //- p
-                  .text-muted Listed on 05/01/2018 by Ray White - Turramurra
-                //- col
-              //- row
-              .row
-                .col-xs-4
-                  img.img-responsive(src="//via.placeholder.com/200")
-                //- col
-                .col-xs-8
-                  p.name
-                    a(href="") 45 Barwon Avenue South Turramurra, NSW 2074
-                  p 5 Bed / 3 Bath / - Car Space / 1156 m
-                    sup 2
-                    | &nbsp;/ HOUSE
-                  //- p
-                  .text-muted Listed on 05/01/2018 by Pearman Media
-                //- col
-              //- row
+              h5.visible-sm.visible-xs Job List
+              .form-group.select.menu.visible-sm.visible-xs
+                select.form-control
+                  option(selected) Select Order
+                  option 47 Ashburnton Avenue South Turramurra, NSW 2074
+                  option 45 Barwon Avenue South Turramurra, NSW 2074
+                //- select
+              //- form-group
+              .property-list.hidden-sm.hidden-xs
+                .row
+                  .col-xs-4
+                    img.img-responsive(src="//via.placeholder.com/200")
+                  //- col
+                  .col-xs-8
+                    p.name
+                      a(href="") 47 Ashburnton Avenue South Turramurra, NSW 2074
+                    p 4 Bed / 2 Bath / 2 Car Space / 1366 m
+                      sup 2
+                      | &nbsp;/ HOUSE
+                    //- p
+                    .text-muted Listed on 05/01/2018 by Ray White - Turramurra
+                  //- col
+                //- row
+                .row
+                  .col-xs-4
+                    img.img-responsive(src="//via.placeholder.com/200")
+                  //- col
+                  .col-xs-8
+                    p.name
+                      a(href="") 45 Barwon Avenue South Turramurra, NSW 2074
+                    p 5 Bed / 3 Bath / - Car Space / 1156 m
+                      sup 2
+                      | &nbsp;/ HOUSE
+                    //- p
+                    .text-muted Listed on 05/01/2018 by Pearman Media
+                  //- col
+                //- row
+                .row
+                  .col-xs-4
+                    img.img-responsive(src="//via.placeholder.com/200")
+                  //- col
+                  .col-xs-8
+                    p.name
+                      a(href="") 47 Ashburnton Avenue South Turramurra, NSW 2074
+                    p 4 Bed / 2 Bath / 2 Car Space / 1366 m
+                      sup 2
+                      | &nbsp;/ HOUSE
+                    //- p
+                    .text-muted Listed on 05/01/2018 by Ray White - Turramurra
+                  //- col
+                //- row
+                .row
+                  .col-xs-4
+                    img.img-responsive(src="//via.placeholder.com/200")
+                  //- col
+                  .col-xs-8
+                    p.name
+                      a(href="") 45 Barwon Avenue South Turramurra, NSW 2074
+                    p 5 Bed / 3 Bath / - Car Space / 1156 m
+                      sup 2
+                      | &nbsp;/ HOUSE
+                    //- p
+                    .text-muted Listed on 05/01/2018 by Pearman Media
+                  //- col
+                //- row
+              //- property-list
             //- aside
           //- col
           .col-md-9.nav-lvl-2.full
             // Nav tabs
-            ul.nav.nav-tabs(role='tablist')
+            .form-group.select.menu.visible-sm.visible-xs
+              select.form-control
+                option(selected) Job Order
+                option Property Details
+                option Documents
+                option Gallery
+                option Settlement History
+                option Audit History
+              //- select
+            //- form-group
+            ul.nav.nav-tabs.hidden-sm.hidden-xs(role='tablist')
               li.active
                 a(href='#tabJobOrder', role='tab', data-toggle='tab') Job Order
               //- li

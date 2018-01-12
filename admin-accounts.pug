@@ -25,47 +25,63 @@ block content
               .form-group.search
                 input.form-control(placeholder='Search...')
               //- form-group
-              .row
-                .col-xs-4
-                  img.img-responsive(src="//via.placeholder.com/200")
-                //- col
-                .col-xs-8
-                  p.name
-                    a(href="") Last name, First name
-                  p email@email.com
-                  //- p
-                  .text-muted Buyer
-                //- col
-              //- row
-              .row
-                .col-xs-4
-                  img.img-responsive(src="//via.placeholder.com/200")
-                //- col
-                .col-xs-8
-                  p.name
-                    a(href="") Last name, First name
-                  p email@email.com
-                  //- p
-                  .text-muted Buyer
-                //- col
-              //- row
-              .row
-                .col-xs-4
-                  img.img-responsive(src="//via.placeholder.com/200")
-                //- col
-                .col-xs-8
-                  p.name
-                    a(href="") Last name, First name
-                  p email@email.com
-                  //- p
-                  .text-muted Buyer
-                //- col
-              //- row
+              h5.visible-sm.visible-xs Account List
+              .form-group.select.menu.visible-sm.visible-xs
+                select.form-control
+                  option(selected) Last name, First name
+                  option Luzuriaga, Rodan
+                //- select
+              //- form-group
+              .account-list.hidden-sm.hidden-xs
+                .row
+                  .col-xs-4
+                    img.img-responsive(src="//via.placeholder.com/200")
+                  //- col
+                  .col-xs-8
+                    p.name
+                      a(href="") Last name, First name
+                    p email@email.com
+                    //- p
+                    .text-muted Buyer
+                  //- col
+                //- row
+                .row
+                  .col-xs-4
+                    img.img-responsive(src="//via.placeholder.com/200")
+                  //- col
+                  .col-xs-8
+                    p.name
+                      a(href="") Last name, First name
+                    p email@email.com
+                    //- p
+                    .text-muted Buyer
+                  //- col
+                //- row
+                .row
+                  .col-xs-4
+                    img.img-responsive(src="//via.placeholder.com/200")
+                  //- col
+                  .col-xs-8
+                    p.name
+                      a(href="") Last name, First name
+                    p email@email.com
+                    //- p
+                    .text-muted Buyer
+                  //- col
+                //- row
+              //- account-list
             //- aside
           //- col
           .col-md-9.nav-lvl-2.full
             // Nav tabs
-            ul.nav.nav-tabs(role='tablist')
+            .form-group.select.menu.visible-sm.visible-xs
+              select.form-control
+                option(selected) Personal Information
+                option Properties
+                option Others
+              //- select
+            //- form-group
+            ul.nav.nav-tabs.hidden-sm.hidden-xs(role='tablist')
               li.active
                 a(href='#tabPersonalInformation', role='tab', data-toggle='tab') Personal Information
               //- li

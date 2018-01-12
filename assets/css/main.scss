@@ -924,4 +924,11 @@ aside.admin {
     right: 10px;
     top: 10px;
   }
+  &.menu {
+    select {
+      border-color: #dadada;
+      background: #eeeeee;
+      border-left-width: 5px;
+    }
+  }
 }

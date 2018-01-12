@@ -16,7 +16,15 @@ block content
       .admin-panel
         .row
           .col-md-3.nav-lvl-1
-            nav
+            .form-group.select.menu.visible-sm.visible-xs
+              select.form-control
+                option My Profile
+                option(selected) My Properties
+                option Change Password
+                option Log out
+              //- select
+            //- form-group
+            nav.hidden-sm.hidden-xs
               ul
                 li
                   a(href="user-account-mp.html") My Profile

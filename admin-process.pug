@@ -16,7 +16,18 @@ block content
       .admin-panel
         .row
           .col-md-3.nav-lvl-1
-            nav
+            h5.visible-sm.visible-xs Status
+            .form-group.select.menu.visible-sm.visible-xs
+              select.form-control
+                option Preliminary
+                option Contract
+                option(selected) Inspection
+                option Settlement
+                option Title Transfer
+                option Completion
+              //- select
+            //- form-group
+            nav.hidden-sm.hidden-xs
               ul
                 li
                   a(href="") Preliminary
@@ -40,7 +51,6 @@ block content
             //- nav
           //- col
           .col-md-9.nav-lvl-2.full
-            p.lead Inspection
             .card Other details
             br
             .panel.panel-default
