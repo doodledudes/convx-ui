@@ -512,13 +512,13 @@ section.admin {
     }
     &.done {
       .box {
-        color: #333;
-        border-color: lighten(#5cb85c, 15%);
+        color: #fff;
+        background: #91cf91;
         &::after {
           font-family: 'FontAwesome';
           content: "\f058";
           position: absolute;
-          color: lighten(#5cb85c, 15%);
+          color: #ffffff;
           font-size: 2em;
           top: 5px;
           right: 15px;
@@ -528,8 +528,8 @@ section.admin {
     }
     &.active {
       .box {
-        color: #333;
-        border-color: #5cb85c;
+        color: #fff;
+        background: #5cb85c;
       }
       .lbl {
         font-weight: bold;
@@ -767,10 +767,10 @@ section.admin {
     }
   }
   .done {
-    color: lighten($success, 10%);
+    color: lighten(#5cb85c, 10%);
   }
   .active {
-    color: $success;
+    color: #5cb85c;
     font-weight: bold;
   }
   .done {
