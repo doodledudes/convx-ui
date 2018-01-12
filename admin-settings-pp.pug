@@ -16,7 +16,13 @@ block content
       .admin-panel
         .row
           .col-md-3.nav-lvl-1
-            nav
+            .form-group.select.menu.visible-sm.visible-xs
+              select.form-control
+                option User Access Control
+                option(selected) Password Policy
+              //- select
+            //- form-group
+            nav.hidden-sm.hidden-xs
               ul
                 li
                   a(href="admin-settings-uac.html") User Access Control
