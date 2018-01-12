@@ -392,12 +392,14 @@ aside.admin {
             transition: all .2s ease-in-out;
             background: $primary;
           }
-          &:hover {
-            color: lighten($primary, 5%);
-            text-decoration: none;
-            // background: lighten(#000, 5%);
-            &::after {
-              height: 100%;
+          @media screen and (min-width: 991px) {
+            &:hover {
+              color: lighten($primary, 5%);
+              text-decoration: none;
+              // background: lighten(#000, 5%);
+              &::after {
+                height: 100%;
+              }
             }
           }
         }
