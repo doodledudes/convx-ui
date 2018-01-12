@@ -1,0 +1,197 @@
+extends ./layout/_layout-admin.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3 Job Orders
+      .admin-panel
+        .row
+          .col-md-3.nav-lvl-1
+            aside.order-list
+              .form-group.select
+                select.form-control
+                  option Sort by
+                //- select
+              //- form-group
+              .form-group.search
+                input.form-control(placeholder='Search...')
+              //- form-group
+              .row
+                .col-xs-4
+                  img.img-responsive(src="//via.placeholder.com/200")
+                //- col
+                .col-xs-8
+                  p.name
+                    a(href="") 47 Ashburnton Avenue South Turramurra, NSW 2074
+                  p 4 Bed / 2 Bath / 2 Car Space / 1366 m
+                    sup 2
+                    | &nbsp;/ HOUSE
+                  //- p
+                  .text-muted Listed on 05/01/2018 by Ray White - Turramurra
+                //- col
+              //- row
+              .row
+                .col-xs-4
+                  img.img-responsive(src="//via.placeholder.com/200")
+                //- col
+                .col-xs-8
+                  p.name
+                    a(href="") 45 Barwon Avenue South Turramurra, NSW 2074
+                  p 5 Bed / 3 Bath / - Car Space / 1156 m
+                    sup 2
+                    | &nbsp;/ HOUSE
+                  //- p
+                  .text-muted Listed on 05/01/2018 by Pearman Media
+                //- col
+              //- row
+              .row
+                .col-xs-4
+                  img.img-responsive(src="//via.placeholder.com/200")
+                //- col
+                .col-xs-8
+                  p.name
+                    a(href="") 47 Ashburnton Avenue South Turramurra, NSW 2074
+                  p 4 Bed / 2 Bath / 2 Car Space / 1366 m
+                    sup 2
+                    | &nbsp;/ HOUSE
+                  //- p
+                  .text-muted Listed on 05/01/2018 by Ray White - Turramurra
+                //- col
+              //- row
+              .row
+                .col-xs-4
+                  img.img-responsive(src="//via.placeholder.com/200")
+                //- col
+                .col-xs-8
+                  p.name
+                    a(href="") 45 Barwon Avenue South Turramurra, NSW 2074
+                  p 5 Bed / 3 Bath / - Car Space / 1156 m
+                    sup 2
+                    | &nbsp;/ HOUSE
+                  //- p
+                  .text-muted Listed on 05/01/2018 by Pearman Media
+                //- col
+              //- row
+            //- aside
+          //- col
+          .col-md-9.nav-lvl-2.full
+            // Nav tabs
+            ul.nav.nav-tabs(role='tablist')
+              li.active
+                a(href='#tabJobOrder', role='tab', data-toggle='tab') Job Order
+              //- li
+              li
+                a(href='#tabPropertyDetails', role='tab', data-toggle='tab') Property Details
+              //- li
+              li
+                a(href='#tabDocuments', role='tab', data-toggle='tab') Documents
+              //- li
+              li
+                a(href='#tabGallery', role='tab', data-toggle='tab') Gallery
+              //- li
+              li
+                a(href='#tabSettlementHistory', role='tab', data-toggle='tab') Settlement History
+              //- li
+              li
+                a(href='#tabAuditHistory', role='tab', data-toggle='tab') Audit History
+              //- li
+            //- ul
+            .tab-content
+              #tabJobOrder.tab-pane.active(role='tabpanel') 
+                .row
+                  .col-md-3
+                    .form-group
+                      label.text-muted Job Order No.
+                      .form-control-static xxx xxxx xxx
+                    //- form-group
+                  //- col
+                  .col-md-3
+                    .form-group
+                      label.text-muted Order Date
+                      .form-control-static 01/27/2018
+                    //- form-group
+                  //- col
+                  .col-md-3
+                    .form-group
+                      label.text-muted Ordered by
+                      .form-control-static Rodan Luzuriaga
+                    //- form-group
+                  //- col
+                  .col-md-3
+                    .form-group
+                      label.text-muted Status
+                      .form-control-static N/A
+                    //- form-group
+                  //- col
+                //- row
+                .row
+                  .col-md-3
+                    .form-group
+                      label.text-muted Assigned to
+                      .form-control-static Randolph Velasco
+                    //- form-group
+                  //- col
+                  .col-md-3
+                    .form-group
+                      label.text-muted Due Date
+                      .form-control-static xx/xx/xxxx
+                    //- form-group
+                  //- col
+                  .col-md-3
+                    .form-group
+                      label.text-muted Process Workflow
+                      .form-control-static N/A
+                    //- form-group
+                  //- col
+                  .col-md-3
+                    .form-group
+                      label.text-muted Task
+                      .form-control-static N/A
+                    //- form-group
+                  //- col
+                //- row
+                .row
+                  .col-md-6
+                    .card
+                      | Other Details goes here...
+                    //- card
+                  //- col
+                  .col-md-6
+                    .card
+                      | Other Details goes here...
+                    //- card
+                  //- col
+                //- row
+              //- tab-pane
+              #tabPropertyDetails.tab-pane(role='tabpanel') 
+                
+              //- tab-pane
+              #tabDocuments.tab-pane(role='tabpanel') 
+                
+              //- tab-pane
+              #tabGallery.tab-pane(role='tabpanel') 
+                
+              //- tab-pane
+              #tabSettlementHistory.tab-pane(role='tabpanel') 
+                
+              //- tab-pane
+              #tabAuditHistory.tab-pane(role='Audit') 
+                
+              //- tab-pane
+            //- tab-content
+          //- col
+        //- row
+      //- admin-panel
+    //- wrapper
+  //- section
+
+//- block content

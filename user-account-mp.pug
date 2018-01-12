@@ -1,0 +1,65 @@
+extends ./layout/_layout-user.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3 My Account
+      .admin-panel
+        .row
+          .col-md-3.nav-lvl-1
+            nav
+              ul
+                li
+                  a.active(href="user-account-mp.html") My Profile
+                //- li
+                li
+                  a(href="user-account-mpr.html") My Properties
+                //- li
+                li
+                  a(href="user-account-cp.html") Change Password
+                //- li
+                li
+                  a(href="user-account-lo.html") Log out
+                //- li
+              //- ul
+            //- nav
+          //- col
+          .col-md-9.nav-lvl-2.full
+            .media
+              .media-left
+                a(href='#')
+                  img.media-object(src='//via.placeholder.com/100', alt='')
+                //- a
+              //- media-left
+              .media-body
+                h4.media-heading
+                  | Rodan Luzuriaga&nbsp;
+                  a(href='')
+                    i.fa.fa-pencil
+                  //- a
+                //- h4
+                br
+                p rodan.luzuriaga@tooltwist.com
+                p xxxx xxx xxxxx
+                br
+                .card.shadow
+                  | Other details here
+                //- card
+              //- media-left
+            //- media
+          //- col
+        //- row
+      //- admin-panel
+    //- wrapper
+  //- section
+
+//- block content

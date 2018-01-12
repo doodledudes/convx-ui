@@ -1,0 +1,89 @@
+extends ./layout/_layout-user.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3 My Account
+      .admin-panel
+        .row
+          .col-md-3.nav-lvl-1
+            nav
+              ul
+                li
+                  a(href="user-account-mp.html") My Profile
+                //- li
+                li
+                  a.active(href="user-account-mpr.html") My Properties
+                //- li
+                li
+                  a(href="user-account-cp.html") Change Password
+                //- li
+                li
+                  a(href="user-account-lo.html") Log out
+                //- li
+              //- ul
+            //- nav
+          //- col
+          .col-md-9.nav-lvl-2.full
+            .media
+              .media-left
+                a(href='#')
+                  img.media-object(src='//via.placeholder.com/100', alt='')
+                //- a
+              //- media-left
+              .media-body
+                h4.media-heading
+                  | 47 Ashburnton Avenue South Turramurra, NSW 2074&nbsp;&nbsp;
+                  a(href="user-account-mpr-edit.html")
+                    i.fa.fa-pencil
+                  //- a
+                //- h4
+                br
+                //- h4.col-md-6
+                  br
+                  .card.shadow
+                    | Other details here
+                  //- card
+                //- col
+                p 4 Bed / 2 Bath / 2 Car Space / 1366 m
+                  sup 2
+                  | &nbsp;/ HOUSE
+                //- p
+                .text-muted Listed on 05/01/2018 by Ray White - Turramurra
+              //- media-left
+            //- media
+            .row
+              .col-md-6
+                br
+                .card.shadow
+                  | Other details here
+                //- card
+              //- col
+              .col-md-6
+                br
+                .card.shadow
+                  | Other details here
+                //- card
+              //- col
+            //- row
+            br
+            .pull-right
+              a.btn.btn-success(href="user-account-mpr.html") Back to List
+            //- pull-right
+            .clearfix
+          //- col
+        //- row
+      //- admin-panel
+    //- wrapper
+  //- section
+
+//- block content

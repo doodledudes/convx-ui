@@ -1,0 +1,59 @@
+extends ./layout/_layout-page.pug
+
+block styles
+  style.
+    header .navbar-default {
+      background-color: #010c19;
+    }
+    footer, header {
+      display: none;
+    }
+    body {
+      background-color: #00111e;
+    }
+    section.page {
+      padding-top: 20px;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.page
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          a(href="index.html")
+            img.logo-md(src="assets/images/logo-cvx.png")
+          //- a
+          br
+          .card
+            h2.lead Sign up:&nbsp;
+              strong [Waiting for more details on this page]
+            //- h2
+            .row
+              .col-md-12
+                .form-group
+                  input.form-control(type="text", placeholder="Detail 1")
+                //- form-group
+              //- col
+            //- row
+            .row
+              .col-md-12
+                .form-group
+                  input.form-control(type="text", placeholder="Detail 2")
+                //- form-group
+              //- col
+            //- row
+            .text-right
+              a.btn.btn-default(href="signup-1.html") Back
+              | &nbsp;
+              a.btn.btn-primary(href="signup-3.html") Next
+            //- text-right
+          //- card
+        //- col
+      //- row
+    //- container
+  //- section
+
+//- block content

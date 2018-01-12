@@ -1,0 +1,83 @@
+extends ./layout/_layout-user.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3 My Account
+      .admin-panel
+        .row
+          .col-md-3.nav-lvl-1
+            nav
+              ul
+                li
+                  a(href="user-account-mp.html") My Profile
+                //- li
+                li
+                  a.active(href="user-account-mpr.html") My Properties
+                //- li
+                li
+                  a(href="user-account-cp.html") Change Password
+                //- li
+                li
+                  a(href="user-account-lo.html") Log out
+                //- li
+              //- ul
+            //- nav
+          //- col
+          .col-md-9.nav-lvl-2.full
+            .form-group.search.pull-right
+              input.form-control(placeholder='Search...')
+            //- form-group
+            a.btn.btn-success(href='user-account-mpr-edit.html') Add New Property
+            .clearfix
+            .table-responsive
+              table.table
+                thead
+                  tr
+                    th ID
+                    th Description
+                    th Address
+                    th Status
+                  //- tr
+                //- thead
+                tbody
+                  tr
+                    td
+                      a(href="user-account-mpr-saved.html") ID
+                    td Description
+                    td Address
+                    td %
+                  //- tr
+                  tr
+                    td
+                      a(href="user-account-mpr-saved.html") ID
+                    td Description
+                    td Address
+                    td %
+                  //- tr
+                  tr
+                    td
+                      a(href="user-account-mpr-saved.html") ID
+                    td Description
+                    td Address
+                    td %
+                  //- tr
+                //- tbody
+              //- table
+            //- table-responsive 
+          //- col
+        //- row
+      //- admin-panel
+    //- wrapper
+  //- section
+
+//- block content

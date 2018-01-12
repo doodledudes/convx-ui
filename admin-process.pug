@@ -1,0 +1,69 @@
+extends ./layout/_layout-admin.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3 Process Workflow
+      .admin-panel
+        .row
+          .col-md-3.nav-lvl-1
+            nav
+              ul
+                li
+                  a(href="") Preliminary
+                //- li
+                li
+                  a(href="") Contract
+                //- li
+                li
+                  a.active(href="admin-process-ins.html") Inspection
+                //- li
+                li
+                  a(href="") Settlement
+                //- li
+                li
+                  a(href="") Title Transfer
+                //- li
+                li
+                  a(href="") Completion
+                //- li
+              //- ul
+            //- nav
+          //- col
+          .col-md-9.nav-lvl-2.full
+            p.lead Inspection
+            .card Other details
+            br
+            .panel.panel-default
+              .panel-heading
+                .panel-title
+                  a.pull-right(href="")
+                    i.fa.fa-plus
+                  | Task
+                //- panel-title
+              //- .panel-heading
+              .panel-body
+                .list-group
+                  .list-group-item Task 1
+                  .list-group-item Task 2
+                  .list-group-item Task 3
+                  .list-group-item Task 4
+                //- lis-group
+              //- panel-body
+            //- panel
+          //- col
+        //- row
+      //- admin-panel
+    //- wrapper
+  //- section
+
+//- block content

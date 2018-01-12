@@ -1,0 +1,138 @@
+extends ./layout/_layout-admin.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3 Accounts
+      .admin-panel
+        .row
+          .col-md-3.nav-lvl-1
+            aside.order-list
+              .form-group.select
+                select.form-control
+                  option Sort by
+                //- select
+              //- form-group
+              .form-group.search
+                input.form-control(placeholder='Search...')
+              //- form-group
+              .row
+                .col-xs-4
+                  img.img-responsive(src="//via.placeholder.com/200")
+                //- col
+                .col-xs-8
+                  p.name
+                    a(href="") Last name, First name
+                  p email@email.com
+                  //- p
+                  .text-muted Buyer
+                //- col
+              //- row
+              .row
+                .col-xs-4
+                  img.img-responsive(src="//via.placeholder.com/200")
+                //- col
+                .col-xs-8
+                  p.name
+                    a(href="") Last name, First name
+                  p email@email.com
+                  //- p
+                  .text-muted Buyer
+                //- col
+              //- row
+              .row
+                .col-xs-4
+                  img.img-responsive(src="//via.placeholder.com/200")
+                //- col
+                .col-xs-8
+                  p.name
+                    a(href="") Last name, First name
+                  p email@email.com
+                  //- p
+                  .text-muted Buyer
+                //- col
+              //- row
+            //- aside
+          //- col
+          .col-md-9.nav-lvl-2.full
+            // Nav tabs
+            ul.nav.nav-tabs(role='tablist')
+              li.active
+                a(href='#tabPersonalInformation', role='tab', data-toggle='tab') Personal Information
+              //- li
+              li
+                a(href='#tabProperties', role='tab', data-toggle='tab') Properties
+              //- li
+              li
+                a(href='#tabOthers', role='tab', data-toggle='tab') Others
+              //- li
+            //- ul
+            .tab-content
+              #tabPersonalInformation.tab-pane.active(role='tabpanel')
+                .row
+                  .col-md-3.col-xs-3
+                    img.img-responsive(src="//via.placeholder.com/200")
+                  //- col
+                  .col-md-9.col-xs-9
+                    .row
+                      .col-md-12
+                        .form-group
+                          h4 Rodan Luzuriaga
+                        //- form-group
+                      //- col
+                    //- row
+                    .row
+                      .col-md-12
+                        .form-group
+                          label.text-muted Address
+                          .form-control-static City, State PostCode
+                        //- form-group
+                      //- col
+                    //- row
+                    .row
+                      .col-md-12
+                        .form-group
+                          label.text-muted UAC / Role
+                          .form-control-static -
+                        //- form-group
+                      //- col
+                    //- row
+                  //- col
+                //- row
+                br
+                .row
+                  .col-md-6
+                    .card
+                      | Other Details goes here...
+                    //- card
+                  //- col
+                  .col-md-6
+                    .card
+                      | Other Details goes here...
+                    //- card
+                  //- col
+                //- row
+              //- tab-pane
+              #tabProperties.tab-pane(role='tabpanel') 
+                
+              //- tab-pane
+              #tabOthers.tab-pane(role='tabpanel') 
+                
+              //- tab-pane
+            //- tab-content
+          //- col
+        //- row
+      //- admin-panel
+    //- wrapper
+  //- section
+
+//- block content

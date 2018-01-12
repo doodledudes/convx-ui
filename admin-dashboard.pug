@@ -1,0 +1,65 @@
+extends ./layout/_layout-admin.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3 Dashboard
+      .summary-row
+        a.dashboard-summary(href="")
+          .col.done
+            .box
+              span.number 65
+            //- box
+            span.lbl Open Job Orders
+          //- col
+          .col.active
+            .box
+              span.number 1
+            //- box
+            span.lbl Preliminary
+          //- col
+          .col
+            .box
+              span.number 20
+            //- box
+            span.lbl Contract
+          //- col
+          .col
+            .box
+              span.number 12
+            //- box
+            span.lbl Inspection
+          //- col
+          .col
+            .box
+              span.number 7
+            //- box
+            span.lbl Settlement
+          //- col
+          .col
+            .box
+              span.number 18
+            //- box
+            span.lbl Title Transfer
+          //- col
+          .col
+            .box
+              span.number 7
+            //- box
+            span.lbl Completion
+          //- col
+        //- dashboard-summary
+      //- summary-row
+    //- wrapper
+  //- section
+
+//- block content

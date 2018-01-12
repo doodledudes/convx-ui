@@ -1,0 +1,99 @@
+extends ./layout/_layout-user.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3 My Account
+      .admin-panel
+        .row
+          .col-md-3.nav-lvl-1
+            nav
+              ul
+                li
+                  a(href="user-account-mp.html") My Profile
+                //- li
+                li
+                  a.active(href="user-account-mpr.html") My Properties
+                //- li
+                li
+                  a(href="user-account-cp.html") Change Password
+                //- li
+                li
+                  a(href="user-account-lo.html") Log out
+                //- li
+              //- ul
+            //- nav
+          //- col
+          .col-md-9.nav-lvl-2.full
+            .row
+              .col-md-6
+                .form-group
+                  input.form-control(type='text', placeholder='Address')
+                //- form-control
+              //- col
+              .col-md-6
+                .form-group
+                  input.form-control(type='text', placeholder='Property Description')
+                //- form-control
+              //- col
+            //- row
+            .row
+              .col-md-4
+                .form-group.select
+                  select.form-control
+                    option City
+                  //- select
+                //- form-control
+              //- col
+              .col-md-4
+                .form-group.select
+                  select.form-control
+                    option State
+                  //- select
+                //- form-control
+              //- col
+              .col-md-4
+                .form-group.select
+                  select.form-control
+                    option Post Code
+                  //- select
+                //- form-control
+              //- col
+            //- row
+            .row
+              .col-md-6
+                br
+                .card.shadow
+                  | Other details here
+                //- card
+              //- col
+              .col-md-6
+                br
+                .card.shadow
+                  | Other details here
+                //- card
+              //- col
+            //- row
+            br
+            .pull-right
+              a.btn.btn-success(href="user-account-mpr.html") Back to List
+              | &nbsp;
+              a.btn.btn-primary(href="user-account-mpr.html") Submit
+            //- pull-right
+            .clearfix
+          //- col
+        //- row
+      //- admin-panel
+    //- wrapper
+  //- section
+
+//- block content

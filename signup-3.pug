@@ -1,0 +1,96 @@
+extends ./layout/_layout-page.pug
+
+block styles
+  style.
+    header .navbar-default {
+      background-color: #010c19;
+    }
+    footer, header {
+      display: none;
+    }
+    body {
+      background-color: #00111e;
+    }
+    section.page {
+      padding-top: 20px;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.page
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          a(href="index.html")
+            img.logo-md(src="assets/images/logo-cvx.png")
+          //- a
+          br
+          .card
+            h2.lead Sign up:&nbsp;
+              strong Personal Information
+            //- h2
+            .row
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="Email Address")
+                //- form-group
+              //- col
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="Phone Number")
+                //- form-group
+              //- col
+            //- row
+            .row
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="First Name")
+                //- form-group
+              //- col
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="Last Name")
+                //- form-group
+              //- col
+            //- row
+            .row
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="Password")
+                //- form-group
+              //- col
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="Confirm Password")
+                //- form-group
+              //- col
+            //- row
+            .form-group
+              .text-muted [CAPTCHA GOES HERE...]
+            //- form-group
+            .form-group.text-right
+              .checkbox
+                label
+                  input(type='checkbox')
+                  |  I have read and accept the 
+                  a(href='termsandconditions.html', target='_blank') terms and conditions
+                  | .
+                //- label
+              //- checkbox
+            //- form-group
+            hr
+            .text-right
+              a.btn.btn-primary(href="user-dashboard.html") Finish
+              .pull-left
+                | Already have an account?&nbsp;
+                a(href="signin.html") Sign in
+            //- text-right
+          //- card
+        //- col
+      //- row
+    //- container
+  //- section
+
+//- block content

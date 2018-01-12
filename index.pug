@@ -1,0 +1,170 @@
+extends ./layout/_layout-page.pug
+
+block content
+  
+  section.banner
+    .container
+      .row
+        .col-md-6
+          h1 Revolutionising Conveyancing through Digitisation
+          br.visible-md.visible-lg
+          p ConvX is a technology platform that will automate and commoditise the mostly manual process of transferring land ownership.
+          br.visible-md.visible-lg
+          .row
+            //- .col-xs-6
+            //-   a.btn.btn-lg.btn-default.btn-block(href="#section-bookademo") Book a demo
+            //- //- col
+            .col-xs-6
+              a.btn.btn-lg.btn-primary.btn-block(href="signup-1.html") Sign up
+            //- col
+          //- row
+        //- col
+      //- row
+    //- container
+  //- section
+  section.about#section-aboutus
+    .container
+      .row
+        .col-md-4
+          h2 About Us
+          p ConvX has legal, tech and start up talent. Dan, the tech lead, is also highly experienced in IP law; Simon, operations, has also founded the Mills Oakley Legal Services Accelerator; and, Nick (sales lead) has scaled a global B2B business from 0 to $12M rev and 100 staff inside 3 years.
+          p We have access to capital, the right networks and execution experience in spades. The timing is right, the team is right and we are now looking for investors to complete the picture.
+        //- col
+        .col-md-8.team
+          .row
+            .col-md-4.text-center
+              center
+                img.img-responsive(src="assets/images/img-dan.png")
+              //- center
+              br
+              strong Dan Hunter
+              p Lawyer and “Tech Guy” Dean of Law at Swinburne Founder of Quitch
+            //- col
+            .col-md-4.text-center
+              center
+                img.img-responsive(src="assets/images/img-simon.png")
+              //- center
+              br
+              strong Simon Quirk
+              p Lawyer and “Operations Guy” Ex COO of ASX Listed Founder of Vidversity
+            //- col
+            .col-md-4.text-center
+              center
+                img.img-responsive(src="assets/images/img-nick.png")
+              //- center
+              br
+              strong Nick Stanley
+              p Engineer and “Sales Guy” Founder of Sky Software Investor, multi founder, VC
+            //- col
+          //- row
+        //- col
+      //- row      
+    //- container
+  //- section
+  section.banner-quote
+    .container
+      .text-center
+        img(src="assets/images/logo-cvx.png")
+        h1 ConvX may be the Uber of conveyancing
+      //- text-center
+    //- container
+  //- section
+  section.howitworks#section-howitworks
+    .container
+      .row
+        .col-md-8.col-md-offset-4
+          h2 How It Works
+          p
+            span Interacts via web/mobile at the consumer level, ensuring timely information, response and reassurance
+          //- p
+          p
+            span Automates and tracks all processes necessary to convey land, reducing insurance costs to deliver settlements more quickly and consistently
+          //- p
+          p
+            span Provides data analytics for clients who are developers. Data will also be packaged for sale to other parties.
+          //- p
+          p
+            span Parcels out piecework within the transaction to home-based & remote knowledge workers
+          //- p
+          p
+            span Deconstructed process allows for the progressive automation of discrete stages over time
+          //- p
+          p
+            span Delivers lower cost to consumer while maintaining attractive margins and also enabling ConvX to scale with more agility than the traditional employee based model
+          //- p
+          p
+            span Integrates with other real estate platforms to create an end to end real estate solutions
+          //- p
+        //- col
+      //- row
+    //- container
+  //- section
+  section.contact#section-contactus
+    .container#section-bookademo
+      .row
+        .col-md-12.text-center
+          h2 Contact Information
+          br
+          .form-group
+            i.fa.fa-map-marker
+            span 56 Maxwell St, South Turramurra NSW 2074, Australia
+          //- form-group
+          .form-group
+            i.fa.fa-phone
+            span +xx (x)xxxx xxx xxx
+          //- form-group
+          .form-group
+            i.fa.fa-fax
+            span +xx (x)xxxx xxx xxx
+          //- form-group
+          .form-group
+            i.fa.fa-envelope
+            span info@convx.com
+          //- form-group
+        //- col
+        //- br.visible-sm.visible-xs
+        //- .col-md-7
+        //-   p.lead Book a Demo
+        //-   .card
+        //-     .row
+        //-       .col-md-6
+        //-         .form-group
+        //-           input.form-control(type="text", placeholder="First name")
+        //-         //- form-group
+        //-       //- col
+        //-       .col-md-6
+        //-         .form-group
+        //-           input.form-control(type="text", placeholder="Last name")
+        //-         //- form-group
+        //-       //- col
+        //-     //- row
+        //-     .form-group
+        //-       input.form-control(type="email", placeholder="Email")
+        //-     //- form-group
+        //-     .form-group
+        //-       input.form-control(type="phone", placeholder="Phone")
+        //-     //- form-group
+        //-     .form-group
+        //-       input.form-control(type="text", placeholder="Company")
+        //-     //- form-group
+        //-     a.btn.btn-primary(href="") Submit
+        //-   //- card
+        //- //- col
+      //- row
+    //- container
+  //- section
+
+//- block content
+
+block scripts
+  script.
+    var obj = $(".navbar-default .navbar-nav > li:not(.dropdown) > a");
+    var body = $("html, body");
+    $(obj).on("click", function(e) {
+      e.preventDefault();
+      var selector = $(this).attr("href");
+      try {
+        var objOffset = $(selector).offset().top;
+      } catch(e){}
+      body.stop().animate({scrollTop: selector == '#' ? 0 : objOffset}, '200', 'swing');
+    });

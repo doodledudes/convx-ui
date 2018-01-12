@@ -1,0 +1,54 @@
+aside.admin
+  a.aside-logo(href='index.html')
+    img(src="assets/images/logo-cvx.png")
+    | ConvX
+  //- a
+  .user-menu
+    span.hi
+      img(src="//via.placeholder.com/40")
+      span Hi&nbsp;
+      span Admin!
+      .pull-right
+        a.drpdown(href='#userDropdown', data-toggle='collapse')
+          i.fa.fa-angle-down
+        //- a
+      //- pull-right
+      .clearfix
+      #userDropdown.collapse
+        nav
+          ul
+            li
+              a(href="admin-settings-uac.html") Account Settings
+            //- li
+          //- ul
+        //- nav
+      //- collapsed
+      .clearfix
+    //- span
+  //- user-menu
+  nav
+    ul
+      li
+        a(href="admin-dashboard.html") Dashboard
+      //- li
+      li
+        a(href="admin-joborders.html") Job Orders
+      //- li
+      li
+        a(href="admin-process.html") Process
+      //- li
+      li
+        a(href="admin-accounts.html") Accounts
+      //- li
+    //- ul
+  //- nav
+  br
+  .input-group
+    input.form-control(placeholder='Search...')
+    span.input-group-btn
+      button.btn.btn-default(type='button')
+        i.fa.fa-search
+      //- button
+    //- span
+  //- input-group
+//- aside

@@ -1,0 +1,176 @@
+extends ./layout/_layout-user.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3
+        a.btn.btn-success.pull-right(href='')
+          i.fa.fa-plus
+        //- a
+        | Process Status
+      .clearfix
+      .process-row.card.shadow
+        a.process-summary.row(href="")
+          .col-md-2.col-sm-4.col-xs-6.done
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-home.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Preliminary
+          //- col
+          .col-md-2.col-sm-4.col-xs-6.active
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-file.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Contract
+          //- col
+          .col-md-2.col-sm-4.col-xs-6
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-search.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Inspection
+          //- col
+          .col-md-2.col-sm-4.col-xs-6
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-handshake-o.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Settlement
+          //- col
+          .col-md-2.col-sm-4.col-xs-6
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-copy.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Title Transfer
+          //- col
+          .col-md-2.col-sm-4.col-xs-6
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-check-circle.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Open Job Orders
+          //- col
+        //- process-summary
+        .details
+          .media
+            .media-left
+              a(href='#')
+                img.media-object(src='//via.placeholder.com/140', alt='')
+              //- a
+            //- media-left
+            .media-body
+              h4.media-heading 47 Ashburnton Avenue South Turramurra, NSW 2074
+              br
+              p 4 Bed / 2 Bath / 2 Car Space / 1366 m
+                sup 2
+                | &nbsp;/ HOUSE
+              //- p
+              .text-muted Listed on 05/01/2018 by Ray White - Turramurra
+            //- media-body
+          //- media
+        //- details
+      //- process-row
+      .process-row.card.shadow
+        a.process-summary.row(href="")
+          .col-md-2.col-sm-4.col-xs-6.done
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-home.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Preliminary
+          //- col
+          .col-md-2.col-sm-4.col-xs-6.done
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-file.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Contract
+          //- col
+          .col-md-2.col-sm-4.col-xs-6.active
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-search.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Inspection
+          //- col
+          .col-md-2.col-sm-4.col-xs-6
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-handshake-o.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Settlement
+          //- col
+          .col-md-2.col-sm-4.col-xs-6
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-copy.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Title Transfer
+          //- col
+          .col-md-2.col-sm-4.col-xs-6
+            .box
+              span.fa-stack.fa-lg.fa-3x
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-check-circle.fa-stack-1x.fa-inverse
+              //- span
+            //- box
+            span.lbl Open Job Orders
+          //- col
+        //- process-summary
+        .details
+          .media
+            .media-left
+              a(href='#')
+                img.media-object(src='//via.placeholder.com/140', alt='')
+              //- a
+            //- media-left
+            .media-body
+              h4.media-heading 45 Barwon Avenue South Turramurra, NSW 2074
+              br
+              p 5 Bed / 3 Bath / - Car Space / 1156 m
+                sup 2
+                | &nbsp;/ HOUSE
+              //- p
+              .text-muted Listed on 05/01/2018 by Pearman Media
+            //- media-body
+          //- media
+        //- details
+      //- process-row
+    //- wrapper
+  //- section
+
+//- block content

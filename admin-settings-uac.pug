@@ -1,0 +1,105 @@
+extends ./layout/_layout-admin.pug
+
+block styles
+  style.
+    body {
+      background: #eee;
+    }
+  //- style
+//- block
+
+block content
+  
+  section.admin
+    .wrapper
+      h3 Settings
+      .admin-panel
+        .row
+          .col-md-3.nav-lvl-1
+            nav
+              ul
+                li
+                  a.active(href="admin-settings-uac.html") User Access Control
+                //- li
+                li
+                  a(href="admin-settings-pp.html") Passoword Policy
+                //- li
+              //- ul
+            //- nav
+          //- col
+          .col-md-9
+            .row
+              .col-md-4.nav-lvl-2
+                nav
+                  ul
+                    li
+                      a.active(href="") System Admin
+                    //- li
+                    li
+                      a(href="") Admin
+                    //- li
+                    li
+                      a(href="") Gigger
+                    //- li
+                    li
+                      a(href="") Conveyancer
+                    //- li
+                    li
+                      a(href="") Seller
+                    //- li
+                    li
+                      a(href="") Buyer
+                    //- li
+                    li
+                      a(href="") Developer
+                    //- li
+                  //- ul
+                //- nav
+              //- col
+              .col-md-8
+                ul.list-group
+                  li.list-group-item
+                    label.switch.rounded.pull-right
+                      input(type='checkbox')
+                      span
+                    //- label
+                    | Job Orders
+                  //- li
+                  li.list-group-item
+                    label.switch.rounded.pull-right
+                      input(type='checkbox', checked)
+                      span
+                    //- label
+                    | Process
+                  //- li
+                  li.list-group-item
+                    label.switch.rounded.pull-right
+                      input(type='checkbox')
+                      span
+                    //- label
+                    | Accounts
+                  //- li
+                  li.list-group-item
+                    label.switch.rounded.pull-right
+                      input(type='checkbox', checked)
+                      span
+                    //- label
+                    | User Access Control
+                  //- li
+                  li.list-group-item
+                    label.switch.rounded.pull-right
+                      input(type='checkbox', checked)
+                      span
+                    //- label
+                    | Password Policy
+                  //- li
+                //- ul
+              //- col
+            //- row
+          //- col
+        //- row
+      //- admin-panel
+    //- wrapper
+  //- section
+
+//- block content
