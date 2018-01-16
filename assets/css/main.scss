@@ -400,6 +400,19 @@ aside.admin {
               &::after {
                 height: 100%;
               }
+              &::before {
+                color: white;
+              }
+            }
+          }
+          &.notification {
+            &::before {
+              content: attr(data-counter);
+              background: red;
+              padding: 0 5px;
+              border-radius: 5px;
+              position: absolute;
+              right: 15px;
             }
           }
         }
@@ -479,10 +492,6 @@ section.admin {
   display: flex;
   flex-flow: row wrap;
   color: gray;
-  &:hover, &:focus, &:active {
-    color: lighten(#000, 35%);
-    text-decoration: none;
-  }
   @media screen and (min-width: 1441px) {
     flex-flow:row;
   }
@@ -500,6 +509,12 @@ section.admin {
       background: white;
       margin: auto;
       position: relative;
+      display: block;
+      color: inherit;
+      &:hover, &:focus, &:active {
+        color: lighten(#000, 35%);
+        text-decoration: none;
+      }
       .number {
         font-size: 80px;
         font-family: 'Dosis', sans-serif;
@@ -880,6 +895,22 @@ section.admin,
 aside.admin {
   &.slideIn {
     margin-left: 0;
+  }
+}
+
+.property-list, .account-list {
+  .row {
+    &.active {
+      // color: white;
+      background: #d9edf7;
+      border-left: 2px solid #64a6de;
+      a {
+        // color: white;
+      }
+      .text-muted {
+        // color: #ccc;
+      }
+    }
   }
 }
 

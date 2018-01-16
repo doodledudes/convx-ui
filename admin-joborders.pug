@@ -12,14 +12,24 @@ block content
   
   section.admin
     .wrapper
-      h3 Job Orders
+      h3
+        a.btn.btn-success.pull-right(href='')
+          | Create New
+        //- a
+        | Job Orders
       .admin-panel
         .row
           .col-md-3.nav-lvl-1
             aside.order-list
               .form-group.select
                 select.form-control
-                  option Sort by
+                  option Open Job Orders
+                  option(selected) Preliminary
+                  option Contract
+                  option Inspection
+                  option Settlement
+                  option Title Transfer
+                  option Completion
                 //- select
               //- form-group
               .form-group.search
@@ -34,7 +44,7 @@ block content
                 //- select
               //- form-group
               .property-list.hidden-sm.hidden-xs
-                .row
+                .row.active
                   .col-xs-4
                     img.img-responsive(src="//via.placeholder.com/200")
                   //- col
@@ -181,14 +191,10 @@ block content
                 //- row
                 .row
                   .col-md-6
-                    .card
-                      | Other Details goes here...
-                    //- card
+                    textarea.form-control(rows='5', placeholder='Other details...')
                   //- col
                   .col-md-6
-                    .card
-                      | Other Details goes here...
-                    //- card
+                    textarea.form-control(rows='5', placeholder='Other details...')
                   //- col
                 //- row
               //- tab-pane

@@ -12,7 +12,11 @@ block content
   
   section.admin
     .wrapper
-      h3 Process Workflow
+      h3
+        a.btn.btn-success.pull-right(href='')
+          | Add New
+        //- a
+        | Process Workflow
       .admin-panel
         .row
           .col-md-3.nav-lvl-1
@@ -51,7 +55,7 @@ block content
             //- nav
           //- col
           .col-md-9.nav-lvl-2.full
-            .card Other details
+            textarea.form-control(rows='5', placeholder='Other details...')
             br
             .panel.panel-default
               .panel-heading

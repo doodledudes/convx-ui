@@ -33,9 +33,21 @@ block content
                 //- select
               //- form-group
               .account-list.hidden-sm.hidden-xs
+                .row.active
+                  .col-xs-4
+                    img.img-responsive(src="//doodledudes.github.io/portfolio/assets/images/me.jpg", width='200')
+                  //- col
+                  .col-xs-8
+                    p.name
+                      a(href="") Luzuriaga, Rodan
+                    p rodan.luzuriaga@tooltwist.com
+                    //- p
+                    .text-muted Buyer
+                  //- col
+                //- row
                 .row
                   .col-xs-4
-                    img.img-responsive(src="//via.placeholder.com/200")
+                    img.img-responsive(src="//via.placeholder.com/200", width='200')
                   //- col
                   .col-xs-8
                     p.name
@@ -47,19 +59,7 @@ block content
                 //- row
                 .row
                   .col-xs-4
-                    img.img-responsive(src="//via.placeholder.com/200")
-                  //- col
-                  .col-xs-8
-                    p.name
-                      a(href="") Last name, First name
-                    p email@email.com
-                    //- p
-                    .text-muted Buyer
-                  //- col
-                //- row
-                .row
-                  .col-xs-4
-                    img.img-responsive(src="//via.placeholder.com/200")
+                    img.img-responsive(src="//via.placeholder.com/200", width='200')
                   //- col
                   .col-xs-8
                     p.name
@@ -96,7 +96,7 @@ block content
               #tabPersonalInformation.tab-pane.active(role='tabpanel')
                 .row
                   .col-md-3.col-xs-3
-                    img.img-responsive(src="//via.placeholder.com/200")
+                    img.img-responsive(src="//doodledudes.github.io/portfolio/assets/images/me.jpg", width='200')
                   //- col
                   .col-md-9.col-xs-9
                     .row
@@ -127,14 +127,10 @@ block content
                 br
                 .row
                   .col-md-6
-                    .card
-                      | Other Details goes here...
-                    //- card
+                    textarea.form-control(rows='5', placeholder='Other details...')
                   //- col
                   .col-md-6
-                    .card
-                      | Other Details goes here...
-                    //- card
+                    textarea.form-control(rows='5', placeholder='Other details...')
                   //- col
                 //- row
               //- tab-pane
