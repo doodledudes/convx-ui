@@ -12,14 +12,18 @@ block content
   
   section.admin
     .wrapper
-      h3 Accounts
+      h3
+        a.btn.btn-success.pull-right(href='')
+          | Add New
+        //- a
+        | Accounts
       .admin-panel
         .row
           .col-md-3.nav-lvl-1
             aside.order-list
               .form-group.select
                 select.form-control
-                  option Sort by
+                  option Active
                 //- select
               //- form-group
               .form-group.search
