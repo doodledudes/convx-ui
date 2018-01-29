@@ -13,52 +13,217 @@ block content
   section.admin
     .wrapper
       h3 Dashboard
-      .summary-row
-        .dashboard-summary
-          .col
-            a.box(href="")
-              span.number 65
-            //- box
-            span.lbl Open Job Orders
-          //- col
-          .col
-            a.box(href="admin-joborders.html")
-              span.number 1
-            //- box
-            span.lbl Preliminary
-          //- col
-          .col
-            a.box(href="")
-              span.number 20
-            //- box
-            span.lbl Contract
-          //- col
-          .col
-            a.box(href="")
-              span.number 12
-            //- box
-            span.lbl Inspection
-          //- col
-          .col
-            a.box(href="")
-              span.number 7
-            //- box
-            span.lbl Settlement
-          //- col
-          .col
-            a.box(href="")
-              span.number 18
-            //- box
-            span.lbl Title Transfer
-          //- col
-          .col
-            a.box(href="")
-              span.number 7
-            //- box
-            span.lbl Completion
-          //- col
-        //- dashboard-summary
-      //- summary-row
+      .card.shadow
+        h4.noprop Search Property
+        br
+        .form-group.search
+          input.form-control(placeholder='Search...')
+        //- form-group
+        a.collapsed.drpdwn.orange(href="#propertySearchAdvanced", data-toggle="collapse")
+          i.fa.fa-filter
+          | &nbsp;Advanced Search
+        //- a
+        .advanced-search.collapse#propertySearchAdvanced
+          br.clearfix
+          .row
+            .col-md-8
+              .form-group
+                .form-group.select
+                  select.form-control
+                    option(selected) Property Type
+                  //- select
+                //- form-group
+              //- form-group
+            //- col
+            .col-md-4
+              .form-group.select
+                select.form-control
+                  option(selected) Status
+                  option Open Job Orders
+                  option Preliminary
+                  option Contract
+                  option Inspection
+                  option Settlement
+                  option Title Transfer
+                  option Completion
+                //- select
+              //- form-group
+            //- col
+            .col-md-4
+              .form-group
+                input.form-control(type="text", placeholder="City")
+              //- form-group
+            //- col
+            .col-md-4
+              .form-group
+                input.form-control(type="text", placeholder="State")
+              //- form-group
+            //- col
+            .col-md-4
+              .form-group
+                input.form-control(type="text", placeholder="Post code")
+              //- form-group
+            //- col
+          //- row
+          .row
+            .col-md-4
+              .form-group
+                .input-group
+                  input.form-control(type='text', placeholder="Date added")
+                  span.input-group-addon
+                    i.fa.fa-calendar-o
+                  //- span
+                //- input-group
+              //- form-group
+            //- col
+            .col-md-4
+              .form-group
+                .input-group
+                  input.form-control(type='text', placeholder="Date modified")
+                  span.input-group-addon
+                    i.fa.fa-calendar-o
+                  //- span
+                //- input-group
+              //- form-group
+            //- col
+          //- row
+        //- advanced-search
+        hr
+        .text-right
+          a.btn.btn-default(href="") Reset
+          | &nbsp;
+          | &nbsp;
+          a.btn.btn-primary(href="") Apply
+        //- text-right
+      //- card
+      br
+      .card.shadow
+        .table-responsive
+          table.table
+            thead
+              tr
+                th First name
+                th Last name
+                th Property Address
+                th Date added
+                th Status
+              //- tr
+            //- thead
+            tbody
+              tr
+                td Rodan
+                td Luzuriaga
+                td
+                  a(href="admin-joborders.html") 56 Maxwell South Turramurra NSW
+                //- td
+                td 11/12/13
+                td
+                  .form-group.select
+                    select.form-control
+                      option Open Job Orders
+                      option(selected) Preliminary
+                      option Contract
+                      option Inspection
+                      option Settlement
+                      option Title Transfer
+                      option Completion
+                    //- select
+                  //- form-group
+                //- td
+              //- tr
+              tr
+                td Rodan
+                td Luzuriaga
+                td
+                  a(href="admin-joborders.html") 56 Maxwell South Turramurra NSW
+                //- td
+                td 11/12/13
+                td
+                  .form-group.select
+                    select.form-control
+                      option Open Job Orders
+                      option(selected) Preliminary
+                      option Contract
+                      option Inspection
+                      option Settlement
+                      option Title Transfer
+                      option Completion
+                    //- select
+                  //- form-group
+                //- td
+              //- tr
+              tr
+                td Rodan
+                td Luzuriaga
+                td
+                  a(href="admin-joborders.html") 56 Maxwell South Turramurra NSW
+                //- td
+                td 11/12/13
+                td
+                  .form-group.select
+                    select.form-control
+                      option Open Job Orders
+                      option(selected) Preliminary
+                      option Contract
+                      option Inspection
+                      option Settlement
+                      option Title Transfer
+                      option Completion
+                    //- select
+                  //- form-group
+                //- td
+              //- tr
+            //- tbody
+          //- table
+        //- table-responsive
+      //- card
+      
+      //- .summary-row
+      //-   .dashboard-summary
+      //-     .col
+      //-       a.box(href="")
+      //-         span.number 65
+      //-       //- box
+      //-       span.lbl Open Job Orders
+      //-     //- col
+      //-     .col
+      //-       a.box(href="admin-joborders.html")
+      //-         span.number 1
+      //-       //- box
+      //-       span.lbl Preliminary
+      //-     //- col
+      //-     .col
+      //-       a.box(href="")
+      //-         span.number 20
+      //-       //- box
+      //-       span.lbl Contract
+      //-     //- col
+      //-     .col
+      //-       a.box(href="")
+      //-         span.number 12
+      //-       //- box
+      //-       span.lbl Inspection
+      //-     //- col
+      //-     .col
+      //-       a.box(href="")
+      //-         span.number 7
+      //-       //- box
+      //-       span.lbl Settlement
+      //-     //- col
+      //-     .col
+      //-       a.box(href="")
+      //-         span.number 18
+      //-       //- box
+      //-       span.lbl Title Transfer
+      //-     //- col
+      //-     .col
+      //-       a.box(href="")
+      //-         span.number 7
+      //-       //- box
+      //-       span.lbl Completion
+      //-     //- col
+      //-   //- dashboard-summary
+      //- //- summary-row
     //- wrapper
   //- section
 

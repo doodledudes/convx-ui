@@ -10,6 +10,25 @@ body {
 h1, h2, h3, h4, h5, .lead {
   font-family: 'Dosis', sans-serif;
   font-weight: lighter;
+  &.noprop {
+    margin: 0;
+  }
+}
+a.drpdwn {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+  &::after {
+    font-family: 'FontAwesome';
+    content: "\f0d8";
+    margin-left: 8px;
+    color: #333;
+  }
+  &.collapsed {
+    &::after {
+      content: "\f0d7";
+    }
+  }
 }
 
 // VARIABLES
@@ -1105,6 +1124,7 @@ aside.admin {
     position: absolute;
     right: 10px;
     top: 10px;
+    font-size: 11px;
   }
   &.search::after {
     content: "\f002";
@@ -1112,6 +1132,7 @@ aside.admin {
     position: absolute;
     right: 10px;
     top: 10px;
+    font-size: 11px;
   }
   &.menu {
     select {
@@ -1119,5 +1140,25 @@ aside.admin {
       background: #eeeeee;
       border-left-width: 5px;
     }
+  }
+}
+table {
+  .form-group {
+    margin-bottom: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.input-group {
+  .input-group-addon {
+    border-color: #e4e4e4;
+    background: white;
+  }
+}
+.orange {
+  color: $primary;
+  &:hover, &:focus {
+    color: lighten($primary, 15%);
   }
 }
