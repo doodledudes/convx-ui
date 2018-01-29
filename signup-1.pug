@@ -28,28 +28,66 @@ block content
           //- a
           br
           .card
-            h2.lead Sign up:&nbsp;
-              strong Property Information
+            h2 Sign up 
+              //-:&nbsp;
+              //- strong Property Information
             //- h2
+            br
+            .row
+              .form-group
+                label.col-sm-2.control-label I am a
+                .col-sm-10
+                  .radio.cus-inline.cus
+                    label
+                      input#roundedcheckbox10(type='radio', name="userType", checked='')
+                      span.fa.fa-check
+                      | Seller
+                    //- label
+                  //- checkbox
+                  .radio.cus-inline.cus
+                    label
+                      input#roundedcheckbox20(type='radio', name="userType")
+                      span.fa.fa-check
+                      | Buyer
+                    //- label
+                  //- checkbox
+                //- col
+              //- form-group
+            //- row
+            br
             .row
               .col-md-6
                 .form-group
-                  form.form-inline
-                    label.text-normal I am a
-                    | &nbsp;&nbsp;&nbsp;
-                    .radio
-                      label
-                        input(type='radio', name="iAm")
-                        |  Seller
-                      //- label
-                    //- checkbox
-                    .radio
-                      label
-                        input(type='radio', name="iAm")
-                        |  Buyer
-                      //- label
-                    //- checkbox
-                  //- form
+                  input.form-control(type="text", placeholder="Email Address")
+                //- form-group
+              //- col
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="Phone Number")
+                //- form-group
+              //- col
+            //- row
+            .row
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="First Name")
+                //- form-group
+              //- col
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="Last Name")
+                //- form-group
+              //- col
+            //- row
+            .row
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="Password")
+                //- form-group
+              //- col
+              .col-md-6
+                .form-group
+                  input.form-control(type="text", placeholder="Confirm Password")
                 //- form-group
               //- col
             //- row
@@ -99,10 +137,21 @@ block content
                 //- form-group
               //- col
             //- row
+            .form-group
+              .checkbox
+                label
+                  input(type='checkbox')
+                  |  I have read and accept the 
+                  a(href='termsandconditions.html', target='_blank') terms and conditions
+                  | .
+                //- label
+              //- checkbox
+            //- form-group
+            hr
             .text-right
-              a.btn.btn-default(href="index.html") Back
+              a.btn.btn-default(href="index.html") Cancel
               | &nbsp;
-              a.btn.btn-primary(href="signup-2.html") Next
+              a.btn.btn-primary(href="user-dashboard.html") Submit
             //- text-right
           //- card
         //- col

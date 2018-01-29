@@ -23,6 +23,137 @@ $chk-color-base         : $chk-base;
 $chk-color-gray-base    : grayscale($chk-base);
 $chk-color-darken       : darken($chk-base, 5%);
 $chk-color-bg           : lighten($chk-base, 100%);
+// -----------------------------------------------------------------------------
+// #############################################################################
+// -----------------------------------------------------------------------------
+// 														CUSTOM FORM ELEMENTS
+// -----------------------------------------------------------------------------
+// #############################################################################
+// -----------------------------------------------------------------------------
+/*** checkbox ***/
+.checkbox, .radio {
+  &.cus-inline { //- .checkbox.cus-inline
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+  &.cus span {
+    @include border-radius(3px);
+  }
+  &.cus-rounded span {
+    @include border-radius(50%);
+  }
+  @at-root .radio { //- .radio.cus only (&.radio selects '.checkbox.radio')
+    &.cus span {
+      @include border-radius(50%);
+    }
+  }
+  &.cus, &.cus-rounded { //- .checkbox.cus, .checkbox.cus-rounded
+    label {
+      & {
+        position: relative;
+        padding: 0;
+        vertical-align: middle;
+      }
+      &:hover span {
+        border-color: $chk-color-base;
+      }
+      input {
+        & {
+          @include opacity(0);
+          margin: 0;
+        }
+        &:checked + span {
+          & {
+            background: $chk-color-base;
+            border: 0;
+          }
+          &::before {
+            display: block;
+          }
+        }
+        &:disabled + span {
+          background: lighten($chk-color-gray-base, 20%);
+          border: 0;
+        }
+      }
+      span {
+        & {
+          border: 1px solid lighten($chk-color-gray-base, 20%);
+          vertical-align: middle;
+          margin-right: 5px;
+          @include box(22px);
+          @include transition(all,ease-in-out,.2s);
+        }
+        &::before {
+          display: none;
+          padding: 4px;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+/*** switch ***/
+.switch {
+  & {
+    position: relative;
+    margin: 0;
+    display: inline-block;
+    @include dimension(44px, 22px);
+    background: $chk-color-bg;
+    -webkit-box-shadow: inset 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: inset 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+    box-shadow: inset 0px 0px 6px 0px rgba(50, 50, 50, 0.3);
+  }
+  &.rounded {
+    @include border-radius(11px);
+  }
+  &.rounded span {
+    & {
+      @include border-radius(50%);
+      @include dimension(18px, 18px);
+      margin: 2px;
+      outline: 0 !important;
+    }
+    &::before {
+      content: "";
+    }
+  }
+  input {
+    & {
+      @include opacity(0);
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    &:checked + span {
+      right: 0;
+      left: auto;
+      background: $chk-color-base;
+      outline: 1px solid darken($chk-base, 5%);
+    }
+  }
+  span {
+    & {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      vertical-align: middle;
+      @include dimension(22px, 100%);
+      background: $chk-color-gray-base;
+      cursor: pointer;
+      outline: 1px solid grayscale($chk-base); //#D4D4D4
+    }
+    &::before {
+      display: block;
+      content: "| |";
+      color: white;
+    }
+  }
+}
+
 
 // =============================================================================[ CUSTOM CSS ]
 
